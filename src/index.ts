@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export class PragmaticBroker {
     private subscriptions: {
-        [eventType: string]: any;
+        [topic: string]: any;
     };
 
     constructor() {
@@ -19,13 +19,13 @@ export class PragmaticBroker {
     }
 
     public unsubscribe(id: string): void {
-        for (const eventType in this.subscriptions) {
-            if (this.subscriptions[eventType][id]) {
-                delete this.subscriptions[eventType][id];
+        for (const topic in this.subscriptions) {
+            if (this.subscriptions[topic][id]) {
+                delete this.subscriptions[topic][id];
                 const isEmpty =
-                    Object.keys(this.subscriptions[eventType]).length === 0;
+                    Object.keys(this.subscriptions[topic]).length === 0;
                 if (isEmpty) {
-                    delete this.subscriptions[eventType];
+                    delete this.subscriptions[topic];
                 }
             }
         }
