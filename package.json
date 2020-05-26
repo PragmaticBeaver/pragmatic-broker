@@ -6,7 +6,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "keywords": [
         "message",
@@ -19,13 +19,16 @@
     "author": "PragmaticBeaver <pragmaticbeaver@gmx.de>",
     "license": "MIT",
     "devDependencies": {
+        "@types/jest": "^25.2.3",
         "@types/uuid": "^8.0.0",
         "@typescript-eslint/eslint-plugin": "^3.0.1",
         "@typescript-eslint/parser": "^3.0.1",
         "eslint": "^7.1.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-import": "^2.20.2",
+        "jest": "^26.0.1",
         "prettier": "^2.0.5",
+        "ts-jest": "^26.0.0",
         "typescript": "^3.9.3"
     },
     "dependencies": {
