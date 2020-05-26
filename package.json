@@ -1,22 +1,31 @@
 {
-  "name": "pragmatic-broker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.1",
-    "@typescript-eslint/parser": "^3.0.1",
-    "eslint": "^7.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.3"
-  },
-  "dependencies": {}
+    "name": "pragmatic-broker",
+    "version": "1.0.0",
+    "description": "A simple message broker for decoupling and easy plugin implementation.",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "message",
+        "event",
+        "broker",
+        "simple",
+        "decoupling",
+        "plugin"
+    ],
+    "author": "PragmaticBeaver <pragmaticbeaver@gmx.de>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/uuid": "^8.0.0",
+        "@typescript-eslint/eslint-plugin": "^3.0.1",
+        "@typescript-eslint/parser": "^3.0.1",
+        "eslint": "^7.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.3"
+    },
+    "dependencies": {
+        "uuid": "^8.1.0"
+    }
 }
